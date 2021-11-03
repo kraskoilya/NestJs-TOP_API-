@@ -16,5 +16,5 @@ jobs:
           registry: docker.pkg.github.com
           name: docker.pkg.github.com/kraskoilya/nestjs-top-api/top-api
           username: ${{ secrets.DOCKER_HUB_USERNAME }}
-          password: ${{ secrets.DOCKER_HUB_ACCESS_TOKEN }}
+          password: ${{ secrets.DOCKER_PASSWORD }}
           tags: 'develop'
