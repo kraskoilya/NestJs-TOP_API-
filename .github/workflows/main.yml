@@ -13,7 +13,7 @@ jobs:
         uses: elgohr/Publish-Docker-Github-Action@master
         with:
           registry: docker.pkg.github.com
-          name: docker.pkg.github.com/kraskoilya/NestJs-TOP_API-/top-api
+          name: docker.pkg.github.com/kraskoilya/nestjs-top-api/nestjs-top-api
           username: ${{ secrets.DOCKER_HUB_USERNAME }}
           password: ${{ secrets.DOCKER_HUB_ACCESS_TOKEN }}
           tags: 'develop'
