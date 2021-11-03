@@ -9,11 +9,14 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@master
+
       - name: Publish to registry
         uses: elgohr/Publish-Docker-Github-Action@master
         with:
           registry: docker.pkg.github.com
-          name: docker.pkg.github.com/kraskoilya/nestjs-top-api/nestjs-top-api
+          name: docker.pkg.github.com/kraskoilya/nestjs-top-api/top-api
           username: ${{ secrets.DOCKER_HUB_USERNAME }}
           password: ${{ secrets.DOCKER_HUB_ACCESS_TOKEN }}
           tags: 'develop'
+          dockerfile: Dockerfile
+          tag_with_ref: true
